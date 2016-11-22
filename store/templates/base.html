@@ -1,0 +1,64 @@
+{% load staticfiles %}
+<html>
+	<head>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<link rel="stylesheet" href="{% static 'css/base.css' %}">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<title>Bookstore</title>
+	</head>
+	<body background="http://thebedfordclanger.com/wp-content/uploads/2014/01/coffee-with-art2.jpg?w=300">
+    <img src="http://eskipaper.com/images/books-wallpaper-3.jpg", width="100%", height="35%" />
+		<h1 > Standul tau de carti online</h1>
+		
+		<div class="container" id="menu">
+  			<ul class="nav nav-tabs">
+    			<li class="active"><a href="/">Pagina principala</a></li>
+    			<li id="contact"><a href="contact">Contact</a></li>
+    			<li><a href="#">Cumpara</a></li>
+  			</ul>
+  			<br>
+		</div>
+		
+		<div id="wrapper">
+        <div class="overlay"></div>
+    
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse " id="navbar">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <h3 id="categorii"><a href="#">Categorii</a></h3>
+                </li>
+                <ul>
+                  <li><a href="#">Beletristica</a>
+                  <!-- <ul></ul> pentru genuri din beletristica-->
+                  </li>
+		              <li><a href="#">Psihologie</a></li>
+                  <li><a href="#">Chimie</a></li>
+                  <li><a href="#">Biologie</a> </li>
+                  <li> <a href="#">Geografie</a></li>
+                  <li><a href="#">Fizica</a></li>
+                  <li><a href="#">Filozofie</a></li>
+                  <li><a href="#">Economie</a></li>
+                  <li><a href="#">Istorie</a></li>
+                  <li><a href="#">Sport</a></li>
+                  <li><a href="#">Arte</a> </li>
+                  <li><a href="#">Religie</a></li>
+  
+                </ul>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+        
+        <div id="divhome">
+          <p>
+          {% block content %}
+            
+          {% endblock %}
+          </p>
+        </div>
+        
+	</body>
+</html>

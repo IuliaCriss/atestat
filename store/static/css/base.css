@@ -1,0 +1,64 @@
+h1 {
+	font-family: Courier;
+	text-align: center;
+	color: #660000;
+
+}
+#parteadesus {
+	height = 35%;
+	width = 100%;
+}
+
+body {
+	
+	background-repeat: no-repeat;
+	height: 100%;
+	position: center;
+}
+
+#sidebar-wrapper {
+	width: 16%;
+	position: fixed;
+}
+
+#menu {
+	margin-left: 16%;
+}
+
+#categorii {
+	text-align: center;
+}
+#listacategorii {
+	font-size: 15px;
+	font-family: courier;
+	color:#660000;
+}
+#navbar {
+	width:15%;
+	position: relative;
+	float:left;
+	height: 100%;
+	background-color: transparent;
+	border:2px dashed #990000;	
+	color:#990000;
+	margin-left: 1%;
+
+}
+#divhome {
+	background-color: transparent;
+	margin-top: 1%;
+	margin-right: 9%;
+	margin-bottom: 1%;
+	margin-left: 17%;
+	border:2px dashed #990000;
+	color: #cc0000;
+	font-family: cursive;
+	height: 100%;
+	font-size: 300%;
+	text-align: center;
+	font-family: serif;
+	text-shadow: 3px 3px  #330000;
+
+
+}
+
