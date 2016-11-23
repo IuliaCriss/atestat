@@ -1,6 +1,7 @@
 {% load staticfiles %}
 <html>
 	<head>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Indie+Flower|Lobster|Pacifico|Ranga" rel="stylesheet"> 
 		<meta charset="utf-8">
   		<meta name="viewport" content="width=device-width, initial-scale=1">
   		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -24,7 +25,6 @@
 		
 		<div id="wrapper">
         <div class="overlay"></div>
-    
         <!-- Sidebar -->
         <nav class="navbar navbar-inverse " id="navbar">
             <ul class="nav sidebar-nav">
@@ -32,21 +32,30 @@
                     <h3 id="categorii"><a href="#">Categorii</a></h3>
                 </li>
                 <ul>
-                  <li><a href="#">Beletristica</a>
-                  <!-- <ul></ul> pentru genuri din beletristica-->
-                  </li>
-		              <li><a href="#">Psihologie</a></li>
-                  <li><a href="#">Chimie</a></li>
-                  <li><a href="#">Biologie</a> </li>
-                  <li> <a href="#">Geografie</a></li>
-                  <li><a href="#">Fizica</a></li>
-                  <li><a href="#">Filozofie</a></li>
-                  <li><a href="#">Economie</a></li>
-                  <li><a href="#">Istorie</a></li>
-                  <li><a href="#">Sport</a></li>
-                  <li><a href="#">Arte</a> </li>
-                  <li><a href="#">Religie</a></li>
-  
+                    <li>
+                      <div class="dropdown">
+                        <span><a href="#">Beletristica</a></span>
+                          <div class="dropdown-content">
+                            <ul>
+                              <a href="#"> SF </a>
+                              <a href="#"> Dragoste </a>
+                              <a href="#"> Aventura </a>
+                            </ul>
+                          </div>
+                      </div>
+                    <!-- <ul></ul> pentru genuri din beletristica-->
+                    </li>
+                    <li><a href="#">Psihologie</a></li>
+                    <li><a href="#">Chimie</a></li>
+                    <li><a href="#">Biologie</a> </li>
+                    <li><a href="#">Geografie</a></li>
+                    <li><a href="#">Fizica</a></li>
+                    <li><a href="#">Filozofie</a></li>
+                    <li><a href="#">Economie</a></li>
+                    <li><a href="#">Istorie</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Arte</a> </li>
+                    <li><a href="#">Religie</a></li>
                 </ul>
             </ul>
         </nav>
@@ -59,6 +68,6 @@
           {% endblock %}
           </p>
         </div>
-        
+
 	</body>
 </html>
