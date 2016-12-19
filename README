@@ -1,0 +1,13 @@
+Acesta este un magazin de carti online
+
+Tehnologiile folosite sunt:
+
+	- Python 
+	- Django
+	- diverse tehnologii de FE (bootstrap)
+
+Django implementeaza MVC, astfel trebuie scrisa fiecare parte din 
+acest design. 
+
+Pana acum sunt completate partial doar cateva fisiere din view-uri si cateva
+rute url.
