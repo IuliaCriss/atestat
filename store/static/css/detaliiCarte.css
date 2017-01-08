@@ -1,0 +1,25 @@
+.titluCarte {
+	
+	position: static;
+	float:left;
+	font-size: 50px;
+	font-family: 'Reem Kufi', sans-serif;
+}
+.autor {
+	position: static;
+	margin-right: 7%;
+	float: right;
+	font-size: 40px;
+	font-family: 'Reem Kufi', sans-serif;
+}
+.detaliiCarte {
+	
+	position: static;
+	float: right;
+	margin-right: 7%;
+	clear:both;
+}
+.recenzie {
+	position: static;
+	float: right;
+}
