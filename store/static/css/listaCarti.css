@@ -1,28 +1,21 @@
-/*.listaTitluCarte {
-	float: left;
-	clear: both;
-	position:relative;
-	font-size: 30px;
+table {
+	width: 100%;
+	font-size: 35px;
+	text-align: left;
 }
-
-.listaAutor {
-	float: right;
-	position :relative;
-	font-size: 30px;
-	
+td {
+	min-width: 33%;
 }
-
-.listaNota {
-	float: right;
-	position : relative;
-	clear: both;
-	font-size: 20px;
-}*/
+tr {
+	border: 1px solid white;
+}
 
 th {
-	text-align: left;
-	
+	text-align: center;
+	font-size: 50px;
+	text-shadow: 2px 2px black;
+	color: #9D98AD;
 }
-table {
-	border: 5px dashed black;
+#grad {
+	 background: -moz-linear-gradient(bottom right, #5B5277, #E3E3E5);
 }

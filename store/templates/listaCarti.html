@@ -1,29 +1,27 @@
 {% extends 'base.html' %}
 {% block content %}
 
-{% for carte in carti %}
-<!--
-<ul > 
-<div clas="listaTitluCarte"><a href="{% url 'carte' idCarte=carte.pk stringCategorie=carte.categorie %}"> Titlu: {{carte.titlu}}</a> </div>
-<div class="listaAutor"> Autor: {{carte.autor}}</div>
-<div class="listaNota"> Nota: {{carte.pret}}</div> // pt nota 
- </ul> -->
 
 
-
-
-  <table style="width:100%">
-  <tr>
+  <table>
+   <tr>
+  
     <th>Titlu</th>
     <th>Autor</th>
+    <th>Descriere</th>
     <th>Nota</th>
+  </tr> 
+
+{% for carte in carti %}
+
+
+    <tr id="grad">
+      <td><a href="{% url 'carte' idCarte=carte.pk stringCategorie=carte.categorie %}"> {{carte.titlu}}</a></td>
+      <td>{{carte.autor}} </td>
+      <td>{{carte.descriere}}</td>
+      <td> Nota: {{carte.pret}}</td>
   </tr>
-  <tr>
-    <td><a href="{% url 'carte' idCarte=carte.pk stringCategorie=carte.categorie %}"> {{carte.titlu}}</a></td>
-    <td> {{carte.autor}}</td> 
-    <td> {{carte.pret}}</td>
-  </tr>
-</table> 
      {% endfor %}
+  </table> 
 
 {% endblock %}
