@@ -6,7 +6,7 @@
    <ul>
 
      {% for categorie in categorii %}
-	    <ul class="categorii"> <a href ="{% url 'categorie' stringCategorie=categorie.nume %}"> {{ categorie }} </a> </ul>
+	    <ul class="listObjects"> <a href ="{% url 'categorie' stringCategorie=categorie.nume %}"> {{ categorie }} </a> </ul>
      {% endfor %}
 
 
@@ -22,28 +22,3 @@
 {% endblock %}
 
 
-
-
-
-
-
-
-
-	
-<!--	<ul><a href="beletristica">Beletristica</a></ul>
-	<ul><a href="sf">Sci-Fi</a></ul>
-	<ul>Istorie</ul>
-	<ul>Filosofie</ul>
-	<ul>Geografie</ul>
-	<ul>Carti de bucate</ul>
-	<ul>Dragoste</ul>
-	<ul>Aventura</ul>
-	<ul>Economie</ul>
-	<ul>Biologie</ul>
-	<ul>Matematica</ul>
-	<ul>Fizica</ul>
-	<ul>Chimie</ul>
-	<ul>Sport</ul>
-	<ul>Sanatate</ul>
-	<ul>Reviste</ul>
--->

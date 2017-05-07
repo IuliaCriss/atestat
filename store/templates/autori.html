@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div>
+
+   <ul>
+
+     {% for autor in autori %}
+	    <ul class="listObjects"> <a href ="{% url 'autor' stringAutor=autor.nume %}"> {{ autor }} </a> </ul>
+     {% endfor %}
+
+
+   </ul>
+
+
+</div>
+
+
+
+
+
+{% endblock %}
+
+

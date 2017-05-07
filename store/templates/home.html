@@ -1,11 +1,39 @@
 {% extends 'base.html' %}
 {% block content %}
+{%load static %}
 
-<div class="google-fonts">
-	<p>Bine ati venit pe pagina noastra! </p>
-	<p> Aici veti gasi o mare varietate de carti disponibile la preturi incredibile! </p>
+
+	<div class="head">
+		<p>Aici veti gasi cele mai sincere recenzii! </p>
+		<p>Cele mai bune revizii</p>
+	</div>
+
 	
-</div>
+	{% for carte in carti %}
+
+		<div class="book">
+			<div class="image-list">
+	 			<a href="{% url 'carte' idCarte=carte.carte.pk stringCategorie=carte.carte.categorie %}">
+					<img border="0" alt="image" src = "{% static 'images/emptyCover.jpeg' %}" height="100" width="100">
+				</a>
+			</div>
+		
+			<div class="caracteristici">
+		      {{carte.nr}}. {{carte.carte.titlu}}
+		      <br>
+		   	  Autor: {{carte.carte.autor}}
+		   	</div>
+		   	<div class="caracteristici">
+		      Nota: {{carte.carte.nota}}
+	   		</div>
+	   		<div class="caracteristici star">
+	   		  <img src="{% static 'images/star.jpg' %}" alt="star" height="35" width="35">
+	   		</div>
+   		</div>
+   		<hr>
+     {% endfor %}
+ 
+
 
 
 {% endblock %}

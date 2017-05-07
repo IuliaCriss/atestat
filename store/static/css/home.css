@@ -1,15 +1,30 @@
-#divhome {
-	width: 100%
-	height:100%;
-	background-color: #e6e6ff;
-	margin-top: 1%;
-	margin-right: 1%;
-	margin-left: 1%;
-	border:2px dashed #b3b3ff;
-	font-family: 'Reem Kufi', sans-serif;
-	font-size: 300%;
-	text-align: center;
-	position: relative;
+.image-list {
+	clear:left;
+	float:left;
+	margin-right:2%;
+}
 
+.caracteristici {
+	clear:right;
+	float:left;
+	margin-left: 3%;
+	text-align: left;
+	min-width: 20%;
 
+}
+.book {
+
+	position: :absolute;
+	padding-bottom: 10%;
+	margin-left: 25%;
+	font-size: 60%;
+}
+
+.head {
+	
+	margin-bottom: 5%;
+
+}
+.star {
+	margin-left: 2%;
 }

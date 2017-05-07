@@ -1,10 +1,21 @@
 {% extends 'base.html' %}
 {% block content %}
+{% load static %}
+<div id="container">
+	<div class="titluCarte"><h1>{{carte.titlu}}</h1></div>
+	<div class="starDetalii">
+		   		  <img src="{% static 'images/star.jpg' %}" alt="star" height="35" width="35">
+	</div>
+	<div class="nota">{{carte.nota}}</div> <!-- pt nota -->
+	<div class="autor">{{carte.autor}}</div>
 
 
-<div class="titluCarte"> {{carte.titlu}}</div>
-<div class="autor"> Autor: {{carte.autor}}</div>
-<div class="detaliiCarte"> Detalii: {{carte.descriere}}</div>
-<div class="nota"> Nota: {{carte.pret}}</div> <!-- pt nota -->
-<div class="recenzie"> Detalii: {{carte.descriere}}</div> <!-- pt recenzie -->
+	<div class="descriere">
+		<div class="image-list"> 			
+			<img border="0" alt="image" src = "{% static 'images/emptyCover.jpeg' %}" height="200" width="200">
+		</div>
+		<div> {{carte.descriere|linebreaksbr}}</div>
+	</div>
+	<div class="recenzie"> Recenzie: <br>{{carte.revizie|linebreaksbr}}</div> <!-- pt recenzie -->
+</div>
 {% endblock %}

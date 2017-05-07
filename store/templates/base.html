@@ -7,7 +7,7 @@
   		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   		<link rel="stylesheet" href="{% static 'css/base.css' %}">
       <link rel="stylesheet" href="{% static 'css/home.css' %}">
-      <link rel="stylesheet" href="{% static 'css/categorii.css' %}">
+      <link rel="stylesheet" href="{% static 'css/lists.css' %}">
       <link rel="stylesheet" href="{% static 'css/detaliiCarte.css' %}">
       <link rel="stylesheet" href="{% static 'css/listaCarti.css' %}">
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -16,25 +16,25 @@
 	</head>
 	<body background="{% static 'images/body2.jpg' %}">
     <img src="{% static 'images/wallpapersus.jpg' %}", width="100%", height="45%" />
-		<h1 > Standul tau de carti online</h1>
+		<h1> Reviziile in care poti avea incredere</h1>
 		
 		<div class="menu">  
         <ul>
-            <li><a href="home">Pagina principala</a></li>
-            <li><a href="contact">Contact</a></li>
+            <li><a href="/">Pagina principala</a></li>
             <li>
               <a href="#">Cauta carte <span class="arrow">&#9660;</span> </a>
               <ul class="sub-menu">
-                    <li><a href="categorii">Categorie</a></li>
-                    <li><a href="supports.html">Autor</a></li>
+                    <li><a href="/categorii">Categorie</a></li>
+                    <li><a href="/autori">Autor</a></li>
                 </ul>
             </li>
-
-            <li><a href="lol.html">Cumpara</a></li>
+            <li><a href="/cerere">Cere o recenzie!</a></li>
+            <li><a href="/contact">Contact</a></li>
         </ul>
+
         </div>
 
-        <div id="divhome">
+        <div id="base-box">
           
           {% block content %}
             
